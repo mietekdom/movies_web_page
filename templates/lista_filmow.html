@@ -11,12 +11,17 @@
     <link rel="stylesheet" href="{% static 'moje.css' %}">
 </head>
 <body>
-    <h1>Tu bedzie lista filmów</h1>
+    <p>Lista filmów</p>
+    <a href="{% url 'nowy_film' %}">Nowy</a>
 
-    <h3>{{text}}</h3>
     <ul>
         {% for film in filmy %}
-        <li>{{film}}</li>
+        <div>
+            <h2>{{film.name}}</h2>
+            <p>{{film.description}}</p>
+            <a href="{% url 'edytuj_film' film.id %}">Edytuj</a>
+            <a href="{% url 'usun_film' film.id %}">Usun</a>
+        </div>
         {% endfor %}
 
     </ul>
