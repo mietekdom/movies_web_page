@@ -5,8 +5,6 @@ from .models import Movie
 from .forms import MovieForm
 from django.contrib.auth.decorators import login_required
 
-# Create your views here.
-
 def wszystkie_filmy(request):
     filmy = Movie.objects.all()
     return render(request, 'lista_filmow.html', {'filmy': filmy})
