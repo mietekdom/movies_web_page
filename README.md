@@ -1,11 +1,10 @@
 # movies_web_page
-Python Django
 
-This project is a simple web page to learn Python Django. Webpage with movies information. I
+This project is a simple web page to learn Python Django capability. Webpage with movies information.
 
 # Technologies
 
-This project was created in Python 3.6, Http, css
+This project was created in Python 3.6, Http, css languages.
 
 # Other information
 
